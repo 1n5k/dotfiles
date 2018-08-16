@@ -24,7 +24,7 @@
 
 ;; 列を表示
 (global-linum-mode t)
-(setq linum-format "%5d| ")
+(setq linum-format "%5d|")
 
 ;; C-kで1行切り取り
 (setq kill-whole-line t)
