@@ -1,4 +1,4 @@
-(add-to-list 'load-path "~/.emacs.d/el-get/el-get")
+(aAA[AAdd-to-list 'load-path "~/.emacs.d/el-get/el-get")
 
 (unless (require 'el-get nil 'noerror)
   (require 'package)
@@ -29,7 +29,24 @@
 ;; C-kで1行切り取り
 (setq kill-whole-line t)
 
-;; 日本語や絵文字を全角にして表示
-(add-to-list 'load-path "~/.emacs.d/site-lisp")
-(require 'eaw)
-(eaw-fullwidth)
+;; linux
+(when (eq system-type 'gnu/linux)
+  ;; 日本語や絵文字を全角にして表示
+  (add-to-list 'load-path "~/.emacs.d/site-lisp")
+  (require 'eaw)
+  (eaw-fullwidth)
+  
+  ;; 固定幅フォント
+  (set-face-attribute 'fixed-pitch nil: family "Noto Sans Mono CJK JP")
+
+  ;; 可変幅フォント
+  (set-face-attribute 'variable-pitch nil: family "TakaoPGothic"))
+
+
+;; Windows
+(when (eq system-type 'windows-nt)
+  ;; 固定等幅フォント
+  (set-face-attribute 'fixed-pitch nil: family "MS Gothic")
+
+  ;; 可変幅フォント
+  (set-face-attribute 'variable-pitch nil: family "Yu Gothic UI"))B
