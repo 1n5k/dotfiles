@@ -4,3 +4,6 @@
 [submodule "el-get"]
 	path = el-get
 	url = https://github.com/dimitri/el-get.git
+[submodule "themes"]
+	path = themes
+	url = https://github.com/dracula/emacs.git
