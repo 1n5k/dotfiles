@@ -1,4 +1,10 @@
-((("el-get-bundle" .
+((("system-type" .
+   [0 0 0 0 0 1 0 0 0 0 0])
+  ("eq" .
+   [1 0])
+  ("when" .
+   [0 0 1 0])
+  ("el-get-bundle" .
    [0 0 0 0 0 0 0 0 0 0 1 0 0])
   ("auto-complete" .
    [0 0 0 0 0 0 0 0 1 0 0 0 0])
