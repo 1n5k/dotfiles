@@ -49,4 +49,4 @@
   (set-face-attribute 'fixed-pitch nil: family "MS Gothic")
 
   ;; 可変幅フォント
-  (set-face-attribute 'variable-pitch nil: family "Yu Gothic UI"))B
+  (set-face-attribute 'variable-pitch nil: family "Yu Gothic UI"))
