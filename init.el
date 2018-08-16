@@ -28,3 +28,8 @@
 
 ;; C-kで1行切り取り
 (setq kill-whole-line t)
+
+;; 日本語や絵文字を全角にして表示
+(add-to-list 'load-path "~/.emacs.d/site-lisp")
+(require 'eaw)
+(eaw-fullwidth)
