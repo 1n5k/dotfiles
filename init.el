@@ -50,3 +50,29 @@
 
   ;; 可変幅フォント
   (set-face-attribute 'variable-pitch nil: family "Yu Gothic UI"))
+
+;; Mac OS
+(when (eq system-type 'darwin)
+  ;; 固定幅フォント
+  (set-face-attribute 'fixed-pitch nil: family "Osaka-Mono")
+
+  ;;可変幅フォント
+  (set-face-attribute 'variable-pitch nil: family "Osaka")
+
+  ;; ウィンドウの透明度を上げる
+  (add-to-list 'default-frame-alist '(alpha. (0.5 0.5))))
+
+
+
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages (quote (dracula-theme))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
