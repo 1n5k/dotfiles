@@ -1,12 +1,12 @@
-((("el-get-bundle" .
-   [0 0 0 0 0 0 0 0 0 0 1 0 0])
-  ("auto-complete" .
-   [0 0 0 0 0 0 0 0 1 0 0 0 0])
-  ("global-linum-mode" .
-   [0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
-  ("setq" .
-   [2 0 0 0])
+((("kill-whole-line" .
+   [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])
   ("column-number-mode" .
    [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("kill-whole-line" .
-   [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0])))
+  ("setq" .
+   [2 0 0 0])
+  ("global-linum-mode" .
+   [0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
+  ("auto-complete" .
+   [0 0 0 0 0 0 0 0 1 0 0 0 0])
+  ("el-get-bundle" .
+   [0 0 0 0 0 0 0 0 0 0 1 0 0])))
