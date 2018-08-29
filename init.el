@@ -29,6 +29,8 @@
 ;; C-kで1行切り取り
 (setq kill-whole-line t)
 
+;; カーソルの点滅を止める
+(blink-cursor-mode 0)
 ;; linux
 (when (eq system-type 'gnu/linux)
   ;; 日本語や絵文字を全角にして表示
