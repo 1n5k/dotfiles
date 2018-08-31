@@ -1,0 +1,37 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/saltman/" . ".emacs.d/")
+ ("/home/" . "saltman/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/saltman/info/"
+ "/home/saltman/.emacs.d/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "kusa.py"
+ "init.el"
+ "05PartSeason.dat"
+ "01HerbName.dat"
+ "04HowToUse.dat"
+ "02Effect.dat"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/saltman/info/" (23431 20301 215927 100000) "kusa.py" "05PartSeason.dat" "04HowToUse.dat" "02Effect.dat" "01HerbName.dat" ".git/" "../" "./")
+
+ ("/home/saltman/.emacs.d/" (23431 17846 129581 700000) "yes" "themes/" "site-lisp/" "init.el~" "init.el" "ido.last~" "ido.last" "i.txt~" "i.txt" "eshell/" "elpa/" "el-get/" "auto-save-list/" "ac-comphist.dat" "README.md" ".gitmodules" ".git/" "#init.el#" "../" "./")
+
+ ("/home/" (23170 41803 788120 100000) "saltman/" "../" "./")
+
+ ("/home/saltman/" (23430 48302 666265 100000) "xsession" "vyper-venv/" "vyper/" "vscode/" "vapid-keys.txt" "unya.html" "tweet.sh/" "share/" "profile~" "package-lock.json" "orememo.pub" "node_modules/" "node.log" "nim-0.18.0/" "misskeyCL/" "misskey/" "mikutter/" "mastodon/" "locale-eaw/" "linode.sh~" "linode.sh" "libotr-4.1.1.tar.gz" "lib/" "kusa.py~" "kotohajime/" "jquery.min.js" "init.el" "info/" "index.html" "huga.txt" "how_to_nihongo_input.txt" "hoge.txt.gpg" "hoge.txt.asc" "hoge.txt" "hoge.sig" "hoge.sh" "generate" "fonts/" "ethereumbook/" "eth_private_net/" "dracula-theme/" "dePIN.txt" "conemu/" "cheena.txt" "chaininfo.json~" "chaininfo.json" "cC.sh" "btcjsonrpc.rb~" "btcjsonrpc.rb" "bitcoin/" "bin/" "app.js" "amalilith.pub" "amalilith.gpg" "alice.conf" "a.out" "Videos/" "UTF-8-EAW-FULLWIDTH.gz" "Templates/" "SingleNumRegister.sol~" "SingleNumRegister.sol" "SimpleStorage.sol" "Public/" "Pictures/" "PIN.txt" "Nim/" "Music/" "Mental_out/" "Hoge.sol" "Downloads/" "Documents/" "Desktop/" "3.3.0.tar.gz" ".yarnrc" ".yarn/" ".wget-hsts" ".vimrc" ".viminfo" ".v8flags.6.2.414.50.9da145e0b4cead0970c4bee707db048f.json" ".v8flags.6.2.414.50.63a9f0ea7bb98050796b649e85481845.json" ".uim.d/" ".uim" ".token.json.swp" ".thumbnails/" ".sudo_as_admin_successful" ".ssh/" ".scala_history" ".rpmdb/" ".rediscli_history" ".rbenv/" ".python_history" ".profile~" ".profile" ".presage/" ".pki/" ".npmrc" ".npm-global/" ".npm/" ".node_repl_history" ".node-gyp/" ".node-8.11.3/" ".nimble/" ".nano/" ".mozilla/" ".mozc/" ".mongorc.js" ".mikutter/" ".local/" ".launch_with_X" ".gvfs/" ".gtk-bookmarks" ".gnupg/" ".gnome/" ".gitconfig" ".ghc/" ".gem/" ".gconf/" ".ethash/" ".emacs.d/" ".elm/" ".electron/" ".dbus/" ".dbshell" ".config/" ".cache/" ".bundle/" ".bitcoin/" ".bashrc~" ".bashrc" ".bash_logout" ".bash_history" ".anthy/" ".Xresources" ".ICEauthority" "#kusa.py#" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
