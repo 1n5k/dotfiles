@@ -77,6 +77,9 @@
 ;; ビープ音を消す
 (setq ring-bell-function 'ignore)
 
+;; バックアップファイルを~/.ehistに保存
+(setq backup-directory-alist '((".*" . "~/.ehist")))
+
 ;; linux
 (when (eq system-type 'gnu/linux)
   ;; 日本語や絵文字を全角にして表示
