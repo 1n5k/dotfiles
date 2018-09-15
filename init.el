@@ -42,13 +42,10 @@
 (set-default-coding-systems 'utf-8-unix)
 
 ;; テキストファイル・新規バッファの文字コード
-(set-file-name-coding-system 'utf-8-unix)
+(set-file-name-coding-system 'utf-8)
 
 ;; メニューバーを削除
 (menu-bar-mode 0)
-
-;; ツールバーを削除
-(tool-bar-mode 0)
 
 ;; C-hをBackSpaceに設定
 (global-set-key (kbd "C-h") 'delete-backward-char)
@@ -71,7 +68,7 @@
 ;; shellの文字化けを回避
 (add-hook 'shell-mode-hook
           (lambda()
-            (set-buffer-process-coding-system 'utf-8-unix 'utf-8-unix)
+            (set-buffer-process-coding-system 'utf-8 'utf-8)
             ))
 
 ;; ビープ音を消す
@@ -86,32 +83,28 @@
   (add-to-list 'load-path "~/.emacs.d/site-lisp")
   (require 'eaw)
   (eaw-fullwidth)
+
+  ;; ツールバーを削除
+  (tool-bar-mode 0)
+)
   
-  ;; 固定幅フォント
-  (set-face-attribute 'fixed-pitch nil: family "Noto Sans Mono CJK JP")
-
-  ;; 可変幅フォント
-  (set-face-attribute 'variable-pitch nil: family "TakaoPGothic"))
-
-
-;; Windows
+  ;; Windows
 (when (eq system-type 'windows-nt)
-  ;; 固定等幅フォント
-  (set-face-attribute 'fixed-pitch nil: family "MS Gothic")
-
-  ;; 可変幅フォント
-  (set-face-attribute 'variable-pitch nil: family "Yu Gothic UI"))
-
+  ;; ツールバーを削除
+  (tool-bar-mode 0)
+)
+  
+  ;; Windows
+(when (eq system-type 'windows-nt)
+  ;; ツールバーを削除
+  (tool-bar-mode 0)
+) 
 ;; Mac OS
 (when (eq system-type 'darwin)
-  ;; 固定幅フォント
-  (set-face-attribute 'fixed-pitch nil: family "Osaka-Mono")
-
-  ;;可変幅フォント
-  (set-face-attribute 'variable-pitch nil: family "Osaka")
-
+  
   ;; ウィンドウの透明度を上げる
-  (add-to-list 'default-frame-alist '(alpha. (0.5 0.5))))
+  (add-to-list 'default-frame-alist '(alpha. (0.5 0.5)))
+)
 
 
 
