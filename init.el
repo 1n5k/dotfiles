@@ -65,6 +65,11 @@
 ;; IDOを有効化
 (ido-mode 1)
 
+;; 鬼軍曹を追加
+(add-to-list 'load-path "~/.emacs.d/drill-instructor")
+(require 'drill-instructor)
+(setq drill-instructor-global t)
+
 ;; shellの文字化けを回避
 (add-hook 'shell-mode-hook
           (lambda()
