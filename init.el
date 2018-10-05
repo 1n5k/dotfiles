@@ -45,7 +45,7 @@
 (set-file-name-coding-system 'utf-8)
 
 ;; メニューバーを削除
-(menu-bar-mode 0)
+;;(menu-bar-mode 0)
 
 ;; C-hをBackSpaceに設定
 (global-set-key (kbd "C-h") 'delete-backward-char)
@@ -92,12 +92,6 @@
 (when (eq system-type 'windows-nt)
   ;; ツールバーを削除
   (tool-bar-mode 0)
-)
-  
-  ;; Windows
-(when (eq system-type 'windows-nt)
-  ;; ツールバーを削除
-  (tool-bar-mode 0)
 ) 
 ;; Mac OS
 (when (eq system-type 'darwin)
@@ -118,5 +112,5 @@
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
- ;n; If there is more than one, they won't work right.
+ ;; If there is more than one, they won't work right.
  )
