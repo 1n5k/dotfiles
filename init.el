@@ -92,7 +92,19 @@
   ;; ツールバーを削除
   (tool-bar-mode 0)
 )
-  
+
+; 半角英字設定
+(set-face-attribute 'default nil :family "Noto Mono for Powerline" :height 100)
+; 全角かな設定
+(set-fontset-font (frame-parameter nil 'font)
+                  'japanese-jisx0208
+                  (font-spec :family "Noto Sans CJK JP" :size 14))
+; 半角ｶﾅ設定
+(set-fontset-font (frame-parameter nil 'font)
+                  'katakana-jisx0201
+                  (font-spec :family "Noto Sans CJK JP" :size 14))
+
+
   ;; Windows
 (when (eq system-type 'windows-nt)
   ;; ツールバーを削除
