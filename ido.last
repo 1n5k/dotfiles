@@ -17,6 +17,7 @@
 
 ;; ----- ido-work-file-list -----
 (
+ "README.md"
  "init.el"
  "drill-instructor.el"
  ".zshrc"
@@ -30,7 +31,7 @@
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/kibi/.emacs.d/" (23533 13312 87688 893000) "../" "init.el" "drill-instructor/" "ido.last" "ac-comphist.dat" "./" "ido.last~" "site-lisp/" "emoji_sample.txt" "auto-save-list/" "yes" ".gitmodules" "el-get/" "eshell/" "elpa/" "themes/" ".git/" "README.md")
+ ("/home/kibi/.emacs.d/" (23533 14698 537768 865000) "../" "init.el" "drill-instructor/" "ido.last" "ac-comphist.dat" "./" "ido.last~" "site-lisp/" "emoji_sample.txt" "auto-save-list/" ".gitignore" ".gitmodules" "el-get/" "eshell/" "elpa/" "themes/" ".ehist/" ".git/" "README.md")
 
  ("/home/kibi/.emacs.d/drill-instructor/" (23479 4353 88674 204000) "../" "drill-instructor.el" "./")
 

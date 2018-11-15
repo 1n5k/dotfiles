@@ -93,7 +93,7 @@
 
 ;; GUI Settings
 (if window-system
-    (set-frame-parameter nil 'alpha 80)
+    (set-frame-parameter nil 'alpha 90)
   ;; ツールバーを削除
   (tool-bar-mode 0)
   ;; メニューバーを削除
