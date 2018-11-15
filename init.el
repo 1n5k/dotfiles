@@ -39,7 +39,7 @@
 (setq-default indent-tabs-mode nil)
 
 ;; デフォルトの文字コード
-(set-default-coding-systems 'utf-8-unix)
+(set-default-coding-systems 'utf-8)
 
 ;; テキストファイル・新規バッファの文字コード
 (set-file-name-coding-system 'utf-8)
@@ -79,40 +79,40 @@
 ;; ビープ音を消す
 (setq ring-bell-function 'ignore)
 
-;; バックアップファイルを~/.ehistに保存
-(setq backup-directory-alist '((".*" . "~/.ehist")))
+;; バックアップファイルを~/.emacs.d/ehistに保存
+(setq backup-directory-alist '((".*" . "~/.emacs.d/.ehist")))
 
-;; linux
-(when (eq system-type 'gnu/linux)
-  ;; 日本語や絵文字を全角にして表示
-  (add-to-list 'load-path "~/.emacs.d/site-lisp")
-  (require 'eaw)
-  (eaw-fullwidth)
-
-  ;; ツールバーを削除
-  (tool-bar-mode 0)
-)
-
-; 半角英字設定
+;; 半角英字設定
 (set-face-attribute 'default nil :family "Noto Mono for Powerline" :height 100)
-; 全角かな設定
+;; 全角かな設定
 (set-fontset-font (frame-parameter nil 'font)
                   'japanese-jisx0208
                   (font-spec :family "Noto Sans CJK JP" :size 14))
-; 半角ｶﾅ設定
+;; 半角ｶﾅ設定
 (set-fontset-font (frame-parameter nil 'font)
                   'katakana-jisx0201
                   (font-spec :family "Noto Sans CJK JP" :size 14))
 
-
-  ;; Windows
-(when (eq system-type 'windows-nt)
+;; GUI Settings
+(if window-system
+    (set-frame-parameter nil 'alpha 80)
   ;; ツールバーを削除
-  (tool-bar-mode 0)
+  (tool-bar-mode 0))
+
+;; linux()
+(when (eq system-type 'gnu/linux)
+  ;; 日本語や絵文字を全角にして表示
+  (add-to-list 'load-path "~/.emacs.d/site-lisp")
+  (require 'eaw)
+  (eaw-fullwidth))
+
+;; Windows
+(when (eq system-type 'windows-nt)
+
 ) 
+
 ;; Mac OS
 (when (eq system-type 'darwin)
-  
   ;; ウィンドウの透明度を上げる
   (add-to-list 'default-frame-alist '(alpha. (0.5 0.5)))
 )
