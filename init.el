@@ -44,8 +44,6 @@
 ;; テキストファイル・新規バッファの文字コード
 (set-file-name-coding-system 'utf-8)
 
-;; メニューバーを削除
-;;(menu-bar-mode 0)
 
 ;; C-hをBackSpaceに設定
 (global-set-key (kbd "C-h") 'delete-backward-char)
@@ -97,7 +95,9 @@
 (if window-system
     (set-frame-parameter nil 'alpha 80)
   ;; ツールバーを削除
-  (tool-bar-mode 0))
+  (tool-bar-mode 0)
+  ;; メニューバーを削除
+  (menu-bar-mode 0))
 
 ;; linux()
 (when (eq system-type 'gnu/linux)
@@ -108,14 +108,12 @@
 
 ;; Windows
 (when (eq system-type 'windows-nt)
-
-) 
+  )
 
 ;; Mac OS
 (when (eq system-type 'darwin)
-  ;; ウィンドウの透明度を上げる
-  (add-to-list 'default-frame-alist '(alpha. (0.5 0.5)))
-)
+
+  )
 
 
 
