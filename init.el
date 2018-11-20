@@ -40,6 +40,7 @@
 
 ;; デフォルトの文字コード
 (set-default-coding-systems 'utf-8)
+(prefer-coding-system 'utf-8)
 
 ;; テキストファイル・新規バッファの文字コード
 (set-file-name-coding-system 'utf-8)
@@ -114,7 +115,6 @@
 (when (eq system-type 'darwin)
 
   )
-
 
 
 (custom-set-variables
