@@ -1,4 +1,10 @@
-((("drill-instructor" .
+((("set-buffer-file-coding-system" .
+   [0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("utf-8" .
+   [0 0 1 1 0])
+  ("prefer-coding-system" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("drill-instructor" .
    [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
   ("load-path" .
    [1 0 0 0 0 0 0 0 0])

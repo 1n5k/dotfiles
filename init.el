@@ -38,12 +38,11 @@
 ;; インデント文字をタブではなく空白に設定
 (setq-default indent-tabs-mode nil)
 
-;; デフォルトの文字コード
+;; デフォルトの文字コードを設定
 (set-default-coding-systems 'utf-8)
-
-;; テキストファイル・新規バッファの文字コード
+(prefer-coding-system 'utf-8)
 (set-file-name-coding-system 'utf-8)
-
+(set-buffer-file-coding-system 'utf-8)
 
 ;; C-hをBackSpaceに設定
 (global-set-key (kbd "C-h") 'delete-backward-char)
