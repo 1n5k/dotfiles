@@ -79,7 +79,7 @@
 (setq ring-bell-function 'ignore)
 
 ;; バックアップファイルを~/.emacs.d/ehistに保存
-(setq backup-directory-alist '((".*" . "~/.emacs.d/.ehist")))
+(setq backup-directory-alist '((".*" . "~/.emacs.d/ehist")))
 
 ;; 半角英字設定
 (set-face-attribute 'default nil :family "Noto Mono for Powerline" :height 100)

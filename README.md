@@ -1,12 +1,30 @@
 # これは何
-+ emacs25.3向けの.emacs.dです。
-+ WSL(ConEmu), Linux(Ubuntu18.04, Arch Linux), mac OS(iTerm2), Windows 10での動作を確認しています。
++ emacs25以上の.emacs.dです。
++ Linux(Ubuntu18.04, Arch Linux), mac OS(iTerm2), Windows 10, WSL(ConEmu)での動作を確認しています。
 + Tor(The onion routing)を使用した環境での利用は想定されていません。
-+ Noto Sans CJK JPをインストールしている必要があります。
+
+# Dependency
+## Font
++ Noto Mono for Powerline
++ Noto Sans CJK JP
+
+## System
++ emacs(>=25)
++ git(latest)
+
 # How to install
 ```
-cd ~
-git clone --recursive https://github.com/1n5k/.emacs.d.git
+git clone --recursive https://github.com/1n5k/.emacs.d.git ~/.emacs.d
+cd ~/.emacs.d
+git checkout (linux|macos|windows|WSL)
 ```
-## Attention 
-`--recursive`オプションが必要です！このオプションが無いと、themesやel-getがクローンされません。
+
+## Another way  
+```
+git clone https://github.com/1n5k/.emacs.d ~/.emacs.d
+cd ~/.emacs.d
+git submodule init
+git submodule update
+git checkout (linux|macos|windows|WSL)
+```
+
