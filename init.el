@@ -59,7 +59,7 @@
 (setq initial-scratch-message "")
 
 ;; 日本語に設定する
-(set-language-environment "Japanese")
+(set-language-environment "UTF-8")
 
 ;; IDOを有効化
 (ido-mode 1)
