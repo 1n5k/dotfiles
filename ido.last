@@ -2,12 +2,17 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/home/garlic/Document/" . "data_analyze/")
  ("/home/saltman/" . ".emacs.d/")
  ("/home/" . "saltman/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
+ "/home/garlic/.emacs.d/"
+ "/home/garlic/Document/data_analyze/"
+ "/home/garlic/Downloads/"
+ "/home/garlic/"
  "/home/kibi/.emacs.d/"
  "/home/kibi/.emacs.d/drill-instructor/"
  "/home/kibi/"
@@ -17,21 +22,31 @@
 
 ;; ----- ido-work-file-list -----
 (
- "README.md"
  "init.el"
+ "2019-Jan-09.py"
+ "jugyou-2019-Jan-09.md"
+ "plotM1.py"
+ "M1_Data.py"
+ ".ICEauthority"
+ ".xinitrc"
+ "data_analyze_20181122.py"
+ "README.md"
  "drill-instructor.el"
- ".zshrc"
- ".zprofile"
- "kusa.py"
- "05PartSeason.dat"
- "01HerbName.dat"
- "04HowToUse.dat"
- "02Effect.dat"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/" (23463 60089 564112 347000) "../" "./" "kibi/" "lost+found/")
+ ("/home/garlic/.emacs.d/" (23606 43165 406683 369000) "auto-save-list/" "drill-instructor/" "README.md" "eshell/" "ido.last" "el-get/" "ac-comphist.dat" "site-lisp/" "themes/" "emoji_sample.txt" ".git/" ".gitmodules" "./" "elpa/" "../" ".gitignore" "ehist/" "init.el")
+
+ ("/home/garlic/" (23606 43026 953343 709000) ".xsession-errors" "Downloads/" ".ICEauthority.old" ".thumbnails/" "ダウンロード/" ".emacs.d/" ".config/" "Desktop/" ".python_history" ".zshrc" "fonts/" ".dmrc" ".pki/" ".bash_logout" ".zsh-history" ".bash_profile" ".xsession-errors.old" ".zcompdump" "dotfiles/" ".ssh/" ".Xauthority" ".ICEauthority" ".Xauthority.old" "Document/" ".local/" ".zplug/" "vue-firebase-test/" ".mozilla/" ".mozc/" ".esd_auth" ".xprofile" ".bashrc" "./" "../" ".cache/" "Pictures/" ".ehist/" ".gitconfig" ".gnupg/")
+
+ ("/home/garlic/Document/data_analyze/" (23606 39124 173418 442000) "users.dat" "movies.dat" "ALL_animes.csv" "data_analyze_20181122.py" "anime.csv" "ratings.dat" "jugyou-2019-Jan-09.md" ".git/" "./" "../" "2019-Jan-09.py")
+
+ ("/home/garlic/Document/" (23545 62130 456746 30000) "./" "../" "data_analyze/")
+
+ ("/home/garlic/Downloads/" (23606 37286 791928 48000) "plotM1.py" "M1_Data.py" "./" "../")
+
+ ("/home/" (23527 12142 630083 364000) "garlic/" "./" "../" "lost+found/")
 
  ("/home/kibi/" (23541 23758 128767 394000) "memo.md" ".zsh_history" "../" ".bash_profile" ".directory" "Documents/" ".wine/" ".Xauthority" ".bash_history" ".mozc/" ".zcompdump" ".gtkrc-2.0" ".cache/" ".gnupg/" ".macromedia/" "q" ".ssh/" "fonts/" ".zprofile" ".esd_auth" ".npm_modules/" "Picture/" ".local/" ".wicd/" ".npm/" ".adobe/" ".bashrc" "./" ".mozilla/" ".zshrc" "Music/" ".rbenv/" ".config/" ".bash_logout" ".xprofile" "Desktop/" ".fonts.conf" ".zplug/" ".xinitrc" "Videos/" "Downloads/" ".npmrc" ".gitconfig" ".pki/" ".emacs.d/" ".ehist/" ".gphoto/" ".kde4/")
 

@@ -82,15 +82,16 @@
 (setq backup-directory-alist '((".*" . "~/.emacs.d/ehist")))
 
 ;; 半角英字設定
-(set-face-attribute 'default nil :family "Noto Mono for Powerline" :height 100)
+; (set-face-attribute 'default nil :family "Noto Mono for Powerline" :height 100)
+(add-to-list 'default-frame-alist '(font . "Noto Sans CJK JP-14" ))
 ;; 全角かな設定
-(set-fontset-font (frame-parameter nil 'font)
-                  'japanese-jisx0208
-                  (font-spec :family "Noto Sans CJK JP" :size 14))
+;(set-fontset-font (frame-parameter nil 'font)
+;                  'japanese-jisx0208
+;                 (font-spec :family "Noto Sans CJK JP" :size 14))
 ;; 半角ｶﾅ設定
-(set-fontset-font (frame-parameter nil 'font)
-                  'katakana-jisx0201
-                  (font-spec :family "Noto Sans CJK JP" :size 14))
+;(set-fontset-font (frame-parameter nil 'font)
+;                  'katakana-jisx0201
+;                  (font-spec :family "Noto Sans CJK JP" :size 14))
 
 ;; GUI Settings
 (if window-system
@@ -122,6 +123,8 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(blink-cursor-mode nil)
+ '(column-number-mode t)
  '(package-selected-packages (quote (dracula-theme))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
