@@ -1,0 +1,13 @@
+[user]
+	name = "Jinsuke"
+	email = jnsk@jnsk.info
+	signingkey = 2DCC858744D1DD2B
+[core]
+	editor = emacs
+
+[commit]
+	gpgsign = true
+
+[gpg]
+	program = gpg
+
