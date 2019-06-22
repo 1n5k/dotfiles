@@ -9,6 +9,7 @@
 
 ;; ----- ido-work-directory-list -----
 (
+ "/home/dianthus/.emacs.d/"
  "/home/garlic/.emacs.d/"
  "/home/garlic/Document/data_analyze/"
  "/home/garlic/Downloads/"
@@ -22,6 +23,7 @@
 
 ;; ----- ido-work-file-list -----
 (
+ "gitignore"
  "init.el"
  "2019-Jan-09.py"
  "jugyou-2019-Jan-09.md"
@@ -31,11 +33,12 @@
  ".xinitrc"
  "data_analyze_20181122.py"
  "README.md"
- "drill-instructor.el"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
+ ("/home/dianthus/.emacs.d/" (23822 25296 667159 212000) "gitignore" "ido.last" "ehist/" "init.el" "emoji_sample.txt" "ac-comphist.dat" "README.md" ".gitmodules" ".gitignore" "themes/" "site-lisp/" "eshell/" "elpa/" "el-get/" "drill-instructor/" "auto-save-list/" ".git/" "../" "./")
+
  ("/home/garlic/.emacs.d/" (23606 43165 406683 369000) "auto-save-list/" "drill-instructor/" "README.md" "eshell/" "ido.last" "el-get/" "ac-comphist.dat" "site-lisp/" "themes/" "emoji_sample.txt" ".git/" ".gitmodules" "./" "elpa/" "../" ".gitignore" "ehist/" "init.el")
 
  ("/home/garlic/" (23606 43026 953343 709000) ".xsession-errors" "Downloads/" ".ICEauthority.old" ".thumbnails/" "ダウンロード/" ".emacs.d/" ".config/" "Desktop/" ".python_history" ".zshrc" "fonts/" ".dmrc" ".pki/" ".bash_logout" ".zsh-history" ".bash_profile" ".xsession-errors.old" ".zcompdump" "dotfiles/" ".ssh/" ".Xauthority" ".ICEauthority" ".Xauthority.old" "Document/" ".local/" ".zplug/" "vue-firebase-test/" ".mozilla/" ".mozc/" ".esd_auth" ".xprofile" ".bashrc" "./" "../" ".cache/" "Pictures/" ".ehist/" ".gitconfig" ".gnupg/")
