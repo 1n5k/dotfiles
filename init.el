@@ -38,11 +38,13 @@
 ;; インデント文字をタブではなく空白に設定
 (setq-default indent-tabs-mode nil)
 
-;; デフォルトの文字コードを設定
+;; デフォルトの文字コード
 (set-default-coding-systems 'utf-8)
 (prefer-coding-system 'utf-8)
+
+;; テキストファイル・新規バッファの文字コード
 (set-file-name-coding-system 'utf-8)
-(set-buffer-file-coding-system 'utf-8)
+
 
 ;; C-hをBackSpaceに設定
 (global-set-key (kbd "C-h") 'delete-backward-char)
@@ -57,7 +59,7 @@
 (setq initial-scratch-message "")
 
 ;; 日本語に設定する
-(set-language-environment "Japanese")
+(set-language-environment "UTF-8")
 
 ;; IDOを有効化
 (ido-mode 1)
@@ -77,18 +79,19 @@
 (setq ring-bell-function 'ignore)
 
 ;; バックアップファイルを~/.emacs.d/ehistに保存
-(setq backup-directory-alist '((".*" . "~/.emacs.d/.ehist")))
+(setq backup-directory-alist '((".*" . "~/.emacs.d/ehist")))
 
 ;; 半角英字設定
-(set-face-attribute 'default nil :family "Noto Mono for Powerline" :height 100)
+; (set-face-attribute 'default nil :family "Noto Mono for Powerline" :height 100)
+(add-to-list 'default-frame-alist '(font . "Noto Sans CJK JP-14" ))
 ;; 全角かな設定
-(set-fontset-font (frame-parameter nil 'font)
-                  'japanese-jisx0208
-                  (font-spec :family "Noto Sans CJK JP" :size 14))
+;(set-fontset-font (frame-parameter nil 'font)
+;                  'japanese-jisx0208
+;                 (font-spec :family "Noto Sans CJK JP" :size 14))
 ;; 半角ｶﾅ設定
-(set-fontset-font (frame-parameter nil 'font)
-                  'katakana-jisx0201
-                  (font-spec :family "Noto Sans CJK JP" :size 14))
+;(set-fontset-font (frame-parameter nil 'font)
+;                  'katakana-jisx0201
+;                  (font-spec :family "Noto Sans CJK JP" :size 14))
 
 ;; GUI Settings
 (if window-system
@@ -105,22 +108,14 @@
   (require 'eaw)
   (eaw-fullwidth))
 
-;; Windows
-(when (eq system-type 'windows-nt)
-  )
-
-;; Mac OS
-(when (eq system-type 'darwin)
-
-  )
-
-
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(blink-cursor-mode nil)
+ '(column-number-mode t)
  '(package-selected-packages (quote (dracula-theme))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.

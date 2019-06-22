@@ -28,3 +28,5 @@ git submodule update
 git checkout (linux|macos|windows|WSL)
 ```
 
+# 参考文献 
++ http://extra-vision.blogspot.com/2016/07/emacs.html
