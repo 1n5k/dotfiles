@@ -5,7 +5,7 @@
 
 # Dependency
 ## Font
-+ Noto Mono for Powerline
++ NotoSansMono Nerd Font
 + Noto Sans CJK JP
 
 ## System
@@ -16,7 +16,6 @@
 ```
 git clone --recursive https://github.com/1n5k/.emacs.d.git ~/.emacs.d
 cd ~/.emacs.d
-git checkout (linux|macos|windows|WSL)
 ```
 
 ## Another way  
@@ -25,8 +24,9 @@ git clone https://github.com/1n5k/.emacs.d ~/.emacs.d
 cd ~/.emacs.d
 git submodule init
 git submodule update
-git checkout (linux|macos|windows|WSL)
 ```
 
 # 参考文献 
-+ http://extra-vision.blogspot.com/2016/07/emacs.html
++ http://extra-vision.blogspot.com/2016/07/emacs.html  
++ https://qiita.com/sotarok/items/0d525e568a6088f6f6bb
++ https://qiita.com/holishix@github/items/8d9b40fd68ef8ca0e821
