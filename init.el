@@ -81,17 +81,21 @@
 ;; バックアップファイルを~/.emacs.d/ehistに保存
 (setq backup-directory-alist '((".*" . "~/.emacs.d/ehist")))
 
-;; 半角英字設定
-; (set-face-attribute 'default nil :family "Noto Mono for Powerline" :height 100)
-(add-to-list 'default-frame-alist '(font . "Noto Sans CJK JP-14" ))
-;; 全角かな設定
-;(set-fontset-font (frame-parameter nil 'font)
-;                  'japanese-jisx0208
-;                 (font-spec :family "Noto Sans CJK JP" :size 14))
-;; 半角ｶﾅ設定
-;(set-fontset-font (frame-parameter nil 'font)
-;                  'katakana-jisx0201
-;                  (font-spec :family "Noto Sans CJK JP" :size 14))
+(cond ((display-graphic-p)
+       ;; 半角英字設定
+       (set-face-attribute 'default nil :family "NotoSansMono Nerd Font" :height 100)
+       ;(add-to-list 'default-frame-alist '(font . "NotoSansMono Nerd Font-14" ))
+
+       ;; 全角かな設定
+       (set-fontset-font (frame-parameter nil 'font)
+                         'japanese-jisx0208
+                         (font-spec :family "Noto Sans CJK JP" :size 14))
+       
+       ;; 半角ｶﾅ設定
+       (set-fontset-font (frame-parameter nil 'font)
+                         'katakana-jisx0208
+                         (font-spec :family "Noto Sans CJK JP" :size 14)) )
+      (t 0))
 
 ;; GUI Settings
 (if window-system
