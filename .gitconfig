@@ -11,3 +11,6 @@
 [gpg]
 	program = gpg
 
+[alias]
+	cloner = "clone --recursive"
+
