@@ -9,12 +9,14 @@ Jinsuke's dotfilesってやつ　これから良くなっていきます
 ## 基本(Basic)  
 ```
 $ git clone --recursive git@github.com:1n5k/dotfiles  
+$ cd ~/dotfiles
 $ ./install.sh  
 ```
  
 ### (Another basic)  
 ```  
 $ git clone https://github.com/1n5k/dotfiles  
+$ cd ~/dotfiles
 $ git submodule init  
 $ git submodule update  
 ```  
