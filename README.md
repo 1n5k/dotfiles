@@ -13,6 +13,7 @@ $ ./install.sh
 ```
  
 ### (Another basic)  
+```  
 $ git clone https://github.com/1n5k/dotfiles  
 $ git submodule init  
 $ git submodule update  
