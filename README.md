@@ -21,7 +21,9 @@ $ git submodule update
   
 ## gitがない人用  
 ```  
-curl -L raw.github.com/1n5k/dotfiles/master/install.sh | bash  
+curl -L https://raw.github.com/1n5k/dotfiles/master/install.sh | bash  
 ```  
-
+```  
+wget -o - https://raw.github.com/1n5k/dotfiles/master/install.sh | bash  
+```  
 
