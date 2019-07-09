@@ -2,16 +2,16 @@
 DOPATH="~/dotfiles"
 DOTFILES_URL="https://github.com/1n5k/dotfiles"
 
-if has "git"; then
+if type "git"; then
     git clone --recursive "$DOTFILES_URL" "$DOPATH"
 
-elif has "curl" || has "wget"; then
+elif type "curl" || has "wget"; then
     tarball="https://github.com/1n5k/dotfiles/archive/master.tar.gz"
 
-    if has "curl"; then
+    if type "curl"; then
         curl -L "$tarball"
         
-    elif has "wget"; then
+    elif type "wget"; then
         wget -o - "$tarball"
 
     fi | tar vxz
