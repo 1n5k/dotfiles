@@ -7,6 +7,6 @@ for f in .??*
 do
     [[ "$f" == ".git" ]] && continue
     [[ "$f" == "*.sh" ]] && continue
-    sudo rm -r "$HOME"/"$f"
+    sudo rm "$HOME"/"$f"
     ln -snfv "$DOPATH"/"$f" "$HOME"/"$f"
 done
