@@ -1,7 +1,7 @@
 #!/bin/bash
 
 DOPATH="dotfiles"
-cd $HOME/"DOPATH
+cd "$HOME"/"$DOPATH"
 git pull
 for f in .??*
 do
