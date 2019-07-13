@@ -1,8 +1,6 @@
 #
 # ~/.bash_profile
 # 
-if [[ -f ~/.bashrc ]]; then
-  source .bashrc
-else
-  echo ".bashrc not found."
+if [ -f ~/.bashrc ]; then
+  . ~/.bashrc
 fi
