@@ -35,6 +35,6 @@ for f in .??*
 do
     [[ "$f" == ".git" ]] && continue
 
-    ln -snfv "$DOPATH/$f" "$HOME"/"$f"
+    ln -snfv "$DOPATH"/"$f" "$HOME"/"$f"
 done
 
