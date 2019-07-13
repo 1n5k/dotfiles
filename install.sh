@@ -1,6 +1,8 @@
 #!/bin/bash
-DOPATH="~/dotfiles"
+DOPATH="dotfiles"
 DOTFILES_URL="https://github.com/1n5k/dotfiles"
+
+cd ~
 
 if type "git"; then
     git clone --recursive "$DOTFILES_URL" "$DOPATH"
