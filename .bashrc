@@ -15,3 +15,6 @@ alias egrep='egrep --color=auto'
 
 ## Terminal
 PS1='[\[\e[91m\] \u\[\e[0m\]@\[\e[92m\]\h\[\e[0m\]: \[\e[94m\]\w\[\e[0m\]]\$ '
+
+## General config
+complete -cf sudo
