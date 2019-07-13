@@ -8,8 +8,8 @@
 
 
 ## alias
-alias ls='ls --color=auto'
-alias ll='ls -l'
+alias ls='ls  -F --color=auto'
+alias ll='ls -lF'
 alias la='ll -a'
 alias grep='grep --color'
 
