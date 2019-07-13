@@ -24,8 +24,11 @@ if ! zplug check --verbose; then
 	printf "Install?[y/n]: "
 	if read -q; then
 		echo; zplug install
+		chmod 755 ~/.zplug
 	fi
 fi
+
+
 
 # Use emacs keybindings even if our EDITOR is set to vi
 bindkey -e
