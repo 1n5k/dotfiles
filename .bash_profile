@@ -15,4 +15,4 @@ fi
 # ここにWindows(というかGit bash)のPATHとかもやった方がいいかもしれない
 
 ## X Server start
-[[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx
+# [[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx
