@@ -18,3 +18,5 @@ PS1='[\[\e[91m\] \u\[\e[0m\]@\[\e[92m\]\h\[\e[0m\]: \[\e[94m\]\w\[\e[0m\]]\$ '
 
 ## General config
 complete -cf sudo
+export LANG=ja_JP.UTF-8
+export LC_CTYPE=ja_JP.UTF-8
