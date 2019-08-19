@@ -1,0 +1,3 @@
+[submodule ".emacs.d"]
+	path = .emacs.d
+	url = https://github.com/1n5k/.emacs.d
