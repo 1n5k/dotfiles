@@ -6,7 +6,7 @@ if type "pyenv" > /dev/null 2>&1; then
 fi
 
 ## rbenv local installation
-if type "~/.rbenv/bin/rbenv"  > /dev/null 2>&1; then
+if type "$HOME/.rbenv/bin/rbenv"  > /dev/null 2>&1; then
     export PATH="$HOME/.rbenv/bin:$PATH"
     eval "$(rbenv init -)"
 fi
