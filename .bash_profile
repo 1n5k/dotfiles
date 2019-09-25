@@ -16,3 +16,7 @@ fi
 ## X Server start本当にGUIでよしなにやる場合のみ必要
 # [[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx
 # export DISPLAY=:0.0
+
+if type "$HOME/.cargo/env" > /dev/null 2>&1; then
+    export PATH="$HOME/.cargo/bin:$PATH"
+fi
