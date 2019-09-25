@@ -22,7 +22,13 @@ if type "npm" > /dev/null 2>&1; then
 fi
 
 
+if type "$HOME/.cargo/env" > /dev/null 2>&1; then
+    # source "$HOME/.cargo/env" もしかして下の行と同じ？
+    export PATH="$HOME/.cargo/bin:$PATH"
+fi
+
 typeset -U path
 path=(~/.local/bin $path[@])
 
 export GPG_TTY=$(tty)
+
