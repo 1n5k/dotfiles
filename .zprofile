@@ -23,8 +23,8 @@ fi
 
 
 if type "$HOME/.cargo/env" > /dev/null 2>&1; then
-    # source "$HOME/.cargo/env" もしかして下の行と同じ？
-    export PATH="$HOME/.cargo/bin:$PATH"
+    source "$HOME/.cargo/env"
+    # export PATH="$HOME/.cargo/bin:$PATH"
 fi
 
 typeset -U path
