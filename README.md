@@ -29,3 +29,8 @@ curl -L https://raw.github.com/1n5k/dotfiles/master/install.sh | bash
 wget -o - https://raw.github.com/1n5k/dotfiles/master/install.sh | bash  
 ```  
 
+# アップデート(How to Update)  
+```
+cd ~/dotfiles  
+git pull  
+````

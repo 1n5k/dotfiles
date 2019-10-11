@@ -34,6 +34,7 @@ fi
 for f in .??*
 do
     [[ "$f" == ".git" ]] && continue
+    [[ "$f" == ".gitmodules" ]] && continue
     [[ "$f" == "*.sh" ]] && continue
 
     ln -snfv "$DOPATH"/"$f" "$HOME"/"$f"
