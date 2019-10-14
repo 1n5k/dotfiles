@@ -6,10 +6,10 @@ Jinsuke's dotfilesってやつ　これから良くなっていきます
 # 利用可能な環境(Available OS)
 |OS |Status |
 |----------|:---:|
-|Windows   |-[]  |
-|GNU/Linux |-[x] |
-|Mac_OS_X  |-[]  |
-|BSD       |-[]  |
+|Windows   |:x:  |
+|GNU/Linux |:o:  |
+|Mac_OS_X  |:x:  |
+|BSD       |:x:  |
 
 
 # 使い方(Installation)  

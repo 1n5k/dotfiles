@@ -77,3 +77,8 @@ POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX="↱"
 POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="↳ "
 
 
+## zsh profiling
+if (which zprof > /dev/null 2>&1); then
+	zprof | tee "$(date +%F)-zprof.txt"
+fi
+
