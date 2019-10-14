@@ -2,7 +2,16 @@
 [![License](https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)  
   
 Jinsuke's dotfilesってやつ　これから良くなっていきます  
-  
+
+# 利用可能な環境(Available OS)
+|OS |Status |
+|----------|:---:|
+|Windows   |-[]  |
+|GNU/Linux |-[x] |
+|Mac_OS_X  |-[]  |
+|BSD       |-[]  |
+
+
 # 使い方(Installation)  
 ~~installer.shとかsetup.shとかそんなものはないから適当にコピーして使ってくれ~~  
 →なんか生えたので、それっぽいインストール方法を書いておきます。  
@@ -13,7 +22,7 @@ $ cd ~/dotfiles
 $ ./install.sh  
 ```
  
-### (Another basic)  
+### 別解(Another basic)  
 ```  
 $ git clone https://github.com/1n5k/dotfiles  
 $ cd ~/dotfiles
@@ -21,7 +30,7 @@ $ git submodule init
 $ git submodule update  
 ```  
   
-## gitがない人用  
+## gitがない人用(Non git)  
 ```  
 curl -L https://raw.github.com/1n5k/dotfiles/master/install.sh | bash  
 ```  
