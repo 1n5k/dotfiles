@@ -1,8 +1,7 @@
 
 EDITOR=emacs
-
-export GTK_IM_MODULE="fcitx"
-export QT_IM_MODULE="fcitx"
-export XMODIFIERS="@im=fcitx"
-export DefaultIMModule="fcitx"
+XMODIFIERS DEFAULT=@im=fcitx
+GTK_IM_MODULE DEFAULT=fcitx
+QT_IM_MODULE DEFAULT=fcitx
+DefaultIMModule DEFAULT=fcitx
 
