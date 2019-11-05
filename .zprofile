@@ -19,7 +19,7 @@ fi
 
 ## Programming language package manager tool export PATH
 # Javascript(npm)
-if type "npm" > /dev/null 2>&1; then
+if type "npm" > /dev/null 2>&1 || type "$HOME/.node_modules/bin/npm" > /dev/null 2>&1; then
     APPEND_PATH+="$HOME/.node_modules/bin"
 fi
 
