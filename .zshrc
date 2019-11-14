@@ -48,7 +48,7 @@ colors
 
 # export CLICOLORS=true
 export CLICOLORS=true
-
+export TERM="xterm-256color"
 
 ## Options
 # history options
@@ -68,17 +68,18 @@ function grep () { command grep --color=tty "$@"; }
 
 ## Powerline settings
 ZSH_THEME=powerlevel9k
-POWERLEVEL9K_MODE='awesome-fontconfig'
+POWERLEVEL9K_MODE='nerdfont-complete'
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(battery user host dir vcs status)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(virtualenv time)
+POWERLEVEL9K_DISABLE_RPROMPT=true
+#POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(time)
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
-POWERLEVEL9K_RPROMPT_ON_NEWLINE=true
-POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX="↱"
-POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="↳ "
+#POWERLEVEL9K_RPROMPT_ON_NEWLINE=true
+#POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX="↱"
+#POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="↳ "
 
 
 ## zsh profiling
-if (which zprof > /dev/null 2>&1); then
-	zprof | tee "$(date +%F)-zprof.txt"
-fi
+##if (which zprof > /dev/null 2>&1); then
+##	zprof | tee "$(date +%F)-zprof.txt"
+##fi
 
