@@ -29,6 +29,13 @@ if [[ -a "$HOME/.cargo/env" ]]; then
     # export PATH="$HOME/.cargo/bin:$PATH"
 fi
 
+# if you want to add SPECIFIC setting, modify this files.
+# DO NOT PUT ANYTHING.
+if [[ -a "$HOME/.specify_config" ]]; then
+    APPEND_PATH+="$HOME/.specify_config"
+fi
+
+
 typeset -U path
 path=($APPEND_PATH[@] ~/.local/bin $path[@])
 
@@ -36,3 +43,4 @@ path=($APPEND_PATH[@] ~/.local/bin $path[@])
 if type "rbenv" > /dev/null 2>&1; then
     eval "$(rbenv init -)"
 fi
+
