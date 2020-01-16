@@ -46,10 +46,6 @@ compinit -u
 autoload -Uz colors 
 colors              
 
-# export CLICOLORS=true
-export CLICOLORS=true
-export TERM="xterm-256color"
-
 ## Options
 # history options
 setopt share_history
