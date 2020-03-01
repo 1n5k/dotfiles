@@ -48,3 +48,10 @@ fi
 if type "rbenv" > /dev/null 2>&1; then
     eval "$(rbenv init -)"
 fi
+
+## GOPATH setting
+if type "go" > /dev/null 2>&1; then
+    export GOPATH="$HOME/go"
+    export GOBIN="$GOPATH/bin"
+fi
+
