@@ -61,6 +61,10 @@ alias ll='ls -lF --color=auto'
 alias ls='ls -F --color=auto'
 alias mkdir='mkdir -p'
 function grep () { command grep --color=tty "$@"; }
+if (( $+commands[emacsclient] )); then
+    alias emt='emacsclient -nc -a ""'
+    alias emc='emacsclient -t -a ""'
+fi
 
 ## Powerline settings
 ZSH_THEME=powerlevel9k

@@ -10,6 +10,12 @@ export TERM="xterm-256color"
 # Set gpg password type in now using tty
 export GPG_TTY=$(tty)
 
+export EDITOR=emacs
+if (( $+commands[emacsclient] )); then
+    export EDITOR='emacsclient -a ""'
+    export VISUAL='emacsclient -a ""'
+fi
+
 APPEND_PATH=()
 ## Programming language version management tool export PATH
 # Python Envrionment tool(pyenv)
