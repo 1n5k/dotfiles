@@ -43,6 +43,8 @@ APPEND_PATH=$(echo ${APPEND_PATH[@]} | tr ' ' ':')
 export PATH="${APPEND_PATH}$PATH"
 # ここにWindows(というかGit bash)のPATHとかもやった方がいいかもしれない
 
+export LC_ALL=ja_JP.UTF-8
+
 ## X Server start本当にGUIでよしなにやる場合のみ必要
 # [[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && exec startx
 # export DISPLAY=:0.0
