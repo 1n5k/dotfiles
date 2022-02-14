@@ -1,7 +1,7 @@
 [user]
 	name = "Jinsuke"
 	email = jnsk@jnsk.info
-	signingkey = 2DCC858744D1DD2B
+	signingkey = F57320673CF64059
 [core]
 	editor = emacs
 
