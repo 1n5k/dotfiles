@@ -1,73 +1,84 @@
-## zplug installtion
-if [[ ! -d ~/.zplug ]]; then
-	git clone https://github.com/zplug/zplug ~/.zplug
+# ~/.zshrc
+# ─────────────────────────────
+# 基本設定
+# ─────────────────────────────
+
+# 環境変数・ターミナル設定など
+export TERM="xterm-256color"
+export CLICOLORS=true
+
+# .zshenv や .zprofile などの読み込みが必要ならここで読み込む
+# (必要に応じて追加してください)
+
+# ─────────────────────────────
+# Sheldon プラグインマネージャの初期化
+# ─────────────────────────────
+
+# Sheldon がインストールされている場合は初期化し、存在しない場合は警告を表示
+if command -v sheldon >/dev/null 2>&1; then
+    eval "$(sheldon source)"
+else
+    echo "Warning: Sheldon が見つかりません。https://github.com/sheldon-plugins/sheldon からインストールしてください。"
 fi
 
-## zplug init
-source ~/.zplug/init.zsh
+# ─────────────────────────────
+# キーバインディング
+# ─────────────────────────────
 
-zplug 'zsh-users/zsh-completions'
-zplug 'zsh-users/zaw'
-zplug 'zsh-users/zsh-syntax-highlighting', defer:2
-zplug 'plugins/git', from:oh-my-zsh
-zplug 'peterhurford/git-aliases.zsh'
-zplug 'zsh-users/zsh-autosuggestions'
-zplug 'zsh-users/zsh-history-substring-search', defer:3
-zplug 'junegunn/fzf-bin', as:command, from:gh-r, rename-to:fzf
-zplug 'mollifier/anyframe'
-zplug 'b4b4r07/enhancd', use:init.sh
-zplug 'zplug/zplug', hook-build:'zplug --self-manage'
-zplug "bhilburn/powerlevel9k", use:powerlevel9k.zsh-theme
-zplug load
-
-if ! zplug check --verbose; then
-	printf "Install?[y/n]: "
-	if read -q; then
-		echo; zplug install
-		chmod 755 ~/.zplug
-	fi
-fi
-
-
-
-# Use emacs keybindings even if our EDITOR is set to vi
+# vi ではなく emacs キーバインディングを使用する
 bindkey -e
 
-# Keep 1000 lines of history within the shell and save it to ~/.zsh_history:
+# ─────────────────────────────
+# 履歴設定
+# ─────────────────────────────
+
 HISTSIZE=10000
 SAVEHIST=10000
 HISTFILE=~/.zsh_history
 
-# Use modern completion system
-autoload -Uz compinit
-compinit -u
-
-## use colors       
-autoload -Uz colors 
-colors              
-
-## Options
-# history options
+# 履歴オプション
 setopt share_history
 setopt histignorealldups
 setopt extended_history
 
-# other option
+# ─────────────────────────────
+# 補完・色設定
+# ─────────────────────────────
+
+# 補完機能の初期化
+autoload -Uz compinit
+compinit
+
+# カラー設定の初期化
+autoload -Uz colors
+colors
+
+# beep を鳴らさない
 setopt no_beep
 
-## Aliases
+# ─────────────────────────────
+# エイリアス・関数
+# ─────────────────────────────
+
 alias la='ls -alF --color=auto'
 alias ll='ls -lF --color=auto'
 alias ls='ls -F --color=auto'
 alias mkdir='mkdir -p'
-function grep () { command grep --color=tty "$@"; }
+
+# grep に色付けオプションを付与
+function grep() { command grep --color=tty "$@"; }
+
+# Emacs クライアントが存在する場合のエイリアス設定
 if (( $+commands[emacsclient] )); then
     alias emt='emacsclient -nc -a ""'
     alias emc='emacsclient -t -a ""'
 fi
 
-## Powerline settings
-ZSH_THEME=powerlevel9k
+# ─────────────────────────────
+# Powerlevel9k の設定 (必要に応じて)
+# ─────────────────────────────
+
+# Powerlevel9k テーマを利用する場合の設定例
 POWERLEVEL9K_MODE='nerdfont-complete'
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(battery user host dir vcs status)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(os_icon time)
@@ -78,8 +89,7 @@ POWERLEVEL9K_RPROMPT_ON_NEWLINE=true
 #POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="↳ "
 
 
-## zsh profiling
-##if (which zprof > /dev/null 2>&1); then
-##	zprof | tee "$(date +%F)-zprof.txt"
-##fi
+# ─────────────────────────────
+# 終了処理
+# ─────────────────────────────
 

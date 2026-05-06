@@ -59,4 +59,5 @@ fi
 if type "go" > /dev/null 2>&1; then
     export GOPATH="$HOME/go"
     export GOBIN="$GOPATH/bin"
+    export GO111MODULE=on
 fi
