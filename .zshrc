@@ -7,9 +7,7 @@
 export TERM="xterm-256color"
 export CLICOLORS=true
 
-# .zshenv .zprofileの読み込み
-source .zshenv
-source .zprofile
+
 
 # ─────────────────────────────
 # Sheldon プラグインマネージャの初期化
@@ -94,3 +92,6 @@ POWERLEVEL9K_RPROMPT_ON_NEWLINE=true
 # 終了処理
 # ─────────────────────────────
 
+# .zshenv .zprofileの読み込み
+source .zshenv
+source .zprofile
