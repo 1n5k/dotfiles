@@ -7,8 +7,9 @@
 export TERM="xterm-256color"
 export CLICOLORS=true
 
-# .zshenv や .zprofile などの読み込みが必要ならここで読み込む
-# (必要に応じて追加してください)
+# .zshenv .zprofileの読み込み
+source .zshenv
+source .zprofile
 
 # ─────────────────────────────
 # Sheldon プラグインマネージャの初期化
@@ -18,7 +19,7 @@ export CLICOLORS=true
 if command -v sheldon >/dev/null 2>&1; then
     eval "$(sheldon source)"
 else
-    echo "Warning: Sheldon が見つかりません。https://github.com/sheldon-plugins/sheldon からインストールしてください。"
+    echo "Warning: Sheldonが見つかりません。https://github.com/rossmacarthur/sheldonからインストールしてください。"
 fi
 
 # ─────────────────────────────

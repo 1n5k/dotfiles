@@ -1,0 +1,44 @@
+shell = "zsh"
+# ~/.config/sheldon/plugins.toml
+
+[plugins.zsh-completions]
+github = "zsh-users/zsh-completions"
+apply  = ["fpath"]         # 補完を使うため fpath へ追加
+
+[plugins.zaw]
+github = "zsh-users/zaw"
+
+[plugins.zsh-autosuggestions]
+github = "zsh-users/zsh-autosuggestions"
+
+[plugins.history-substring-search]
+github = "zsh-users/zsh-history-substring-search"
+
+# oh-my-zsh の git プラグインだけ読み込む
+[plugins.ohmyzsh-git]
+github = "ohmyzsh/ohmyzsh"
+use    = ["plugins/git/git.plugin.zsh"]
+
+[plugins.git-aliases]
+github = "peterhurford/git-aliases.zsh"
+
+# fzf の設定スクリプトのみ読み込む（バイナリは OS で入れる想定）
+[plugins.fzf]
+github = "junegunn/fzf"
+use    = ["shell/key-bindings.zsh", "shell/completion.zsh"]
+
+[plugins.anyframe]
+github = "mollifier/anyframe"
+
+[plugins.enhancd]
+github = "b4b4r07/enhancd"
+use    = ["init.sh"]
+
+# テーマ（Powerlevel9k）
+[plugins.powerlevel9k]
+github = "bhilburn/powerlevel9k"
+use    = ["powerlevel9k.zsh-theme"]
+
+# ハイライトは最後にロードされるのが安全
+[plugins.zsh-syntax-highlighting]
+github = "zsh-users/zsh-syntax-highlighting"
