@@ -7,18 +7,9 @@
 export TERM="xterm-256color"
 export CLICOLORS=true
 
-
-
-# ─────────────────────────────
-# Sheldon プラグインマネージャの初期化
-# ─────────────────────────────
-
-# Sheldon がインストールされている場合は初期化し、存在しない場合は警告を表示
-if command -v sheldon >/dev/null 2>&1; then
-    eval "$(sheldon source)"
-else
-    echo "Warning: Sheldonが見つかりません。https://github.com/rossmacarthur/sheldonからインストールしてください。"
-fi
+# .zshenv .zprofileの読み込み
+source .zshenv
+source .zprofile
 
 # ─────────────────────────────
 # キーバインディング
@@ -74,6 +65,17 @@ if (( $+commands[emacsclient] )); then
 fi
 
 # ─────────────────────────────
+# Sheldon プラグインマネージャの初期化
+# ─────────────────────────────
+
+# Sheldon がインストールされている場合は初期化し、存在しない場合は警告を表示
+if command -v sheldon >/dev/null 2>&1; then
+    eval "$(sheldon source)"
+else
+    echo "Warning: Sheldonが見つかりません。https://github.com/rossmacarthur/sheldonからインストールしてください。"
+fi
+
+# ─────────────────────────────
 # Powerlevel9k の設定 (必要に応じて)
 # ─────────────────────────────
 
@@ -91,7 +93,3 @@ POWERLEVEL9K_RPROMPT_ON_NEWLINE=true
 # ─────────────────────────────
 # 終了処理
 # ─────────────────────────────
-
-# .zshenv .zprofileの読み込み
-source .zshenv
-source .zprofile
